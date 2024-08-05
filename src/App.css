@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* App.js */
+.body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgb(0, 36, 65),
+    rgb(0, 30, 52)
+  );
+}
+
+/* Board.js */
+.board-component {
+  height: auto;
+  width: auto;
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* From https://css.glass */
+  background: rgba(2, 164, 26, 0.422);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.9px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.board {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.board-row {
+  display: flex;
+  margin: auto;
+}
+.button-div {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.status{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Square.js */
+.square {
+  height: 3em;
+  width: 3em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: auto;
+  font-size: 2em;
+  transition: all 0.2s ease-out;
+  float:right;
+  background: rgba(255, 255, 255, 0.05);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(9.9p x); */
+  /* -webkit-backdrop-filter: blur(9.9px); */
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.square:hover {
+  transform: scale(1.1);
+  border: 2px solid white;
+  box-shadow: 0 0 10px white;
+}
+
+.symbol{
+  color: red;
+  font-weight: 900;
+}
+
