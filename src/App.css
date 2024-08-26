@@ -7,11 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    135deg,
-    rgb(0, 36, 65),
-    rgb(0, 30, 52)
-  );
+  background: #171717;
 }
 
 /* Board.js */
@@ -88,3 +84,33 @@
   font-weight: 900;
 }
 
+.highlight{
+  background: linear-gradient(to right, red, yellow);
+  border: 2px solid yellow;
+  box-shadow: 0 0 10px yellow;
+}
+
+.dialog{
+  position: absolute;
+  margin-top: 10px;
+  z-index: 10;
+  background: rgba(255, 254, 254, 0.325);
+  height: 18em;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap: 10px;
+  width: 18em;
+}
+
+.dialog button{
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+
+.dialog button:hover{
+  background: rgb(255, 255, 255);
+  color: black;
+}
